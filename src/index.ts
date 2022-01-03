@@ -23,7 +23,7 @@ cron.schedule(firstReminder, async () => {
   await api.post("", {
     username: "Weekly é hoje!",
     avatar_url,
-    content: ` <@&${holeId}> hoje é dia da weekly sextou!, bora organizar o que teu time fez essa semana galega.`,
+    content: ` <@&${holeId}> boa tarde devs! Hoje é dia da weekly sextou, bora organizar o que seu time fez essa semana e já pode botar a bera pra gelar!`,
   });
 });
 
@@ -39,10 +39,10 @@ cron.schedule(finalReminder, async () => {
   await api.post("", {
     username: "Weekly é agora!",
     avatar_url,
-    content: ` <@&${holeId}> tá começando galega! Bora bora bora!`,
+    content: ` <@&${holeId}> tá começando galera! Bora bora bora!`,
   });
 });
 
 console.log(
-  `Reminders up: "${firstReminder}",  "${secondReminder}",  "${finalReminder}" `,
+  `Reminders up: "${firstReminder}" &  "${secondReminder}" &  "${finalReminder}"; `,
 );
